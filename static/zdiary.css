@@ -1,0 +1,104 @@
+.content-box{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: auto;
+  height: 100%;
+}
+
+
+.calendar{
+  display: flex;
+  flex-direction: row;
+  font-family: 'DungGeunMo';
+  font-size: 13px;
+  margin-bottom: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
+.calendar .today{
+  display: flex;
+  flex: 0.15;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  color: #3F85AA;
+}
+
+.calendar .days{
+  flex: 0.85;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3px 3px;
+  color: gray
+}
+
+.calendar .days > div{
+  display: flex;
+  justify-content: space-around;
+  width: 6%;
+}
+
+.saturday{
+  color:#435ac0;
+}
+
+.sunday{
+  color:#eb4d5f;
+}
+.diarys{
+  overflow: scroll;
+}
+.diary_card{
+display: flex;
+flex-direction: column;
+padding: 10px 10px;
+margin-bottom: 30px;
+border: 1px solid #e6e6e6;
+border-radius: 5px;
+}
+.updated_at{
+color: black;
+padding: 10px 10px;
+font-family: 'DungGeunMo';
+font-size: 12px;
+}
+
+.diary_content .description{
+padding: 5px 5px;
+font-family: 'KyoboHand';
+font-size: 13px;
+text-align: center;
+}
+
+.hidden_diary{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hidden_diary > span{
+  cursor: pointer;
+  padding: 10px;
+  color: #ffffff;
+  background-color: mediumaquamarine;
+  font-size: 13px;
+  border-radius: 10px;
+  opacity:0;
+  transition: 600ms ease-out all;
+}
+
+.hidden_diary > span:hover{
+  opacity:1;
+  transition: 600ms ease-in all;
+}
+.hidden_diary > #hidden_diary_card{
+  display: none;
+  width: -webkit-fill-available;
+  height: 220px;
+  background-image: url('images/mbti.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 600ms ease all;
+}

@@ -1,0 +1,207 @@
+
+
+body {
+  background-color: #a3a3a3;
+  background-image: url("../static/images/pattern.png");
+  background-size: 100px;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 16px;
+
+  /** 기본 폰트 설정 */
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.bookcover {
+  background-color: #b4d1da;
+  border-radius: 9px;
+  border: 1px solid #738186;
+  width: 960px;
+  height: 660px;
+  margin: 100px auto;
+  position: relative;
+}
+
+.bookdot {
+  border-radius: 9px;
+  border: 2px dashed #ffffff;
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.page {
+  background-color: #eeeeee;
+  border-radius: 9px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  padding: 15px;
+}
+.profile-title {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-container {
+  flex: 0.4;
+  margin-right: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.menu-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.menu-container > a {
+  padding: 6px;
+  margin: 6px 0;
+  background-color: #3b87ab;
+  border-bottom-right-radius: 6px; /* 우측 하단 border-radius 적용 */
+  border-top-right-radius: 6px; /* 우측 상단 border-radius 적용 */
+  border: 1px solid #617dc1;
+  color: white;
+  text-decoration: none;
+  font-family: "NeoDunggeunmo";
+  font-size: 0.85rem;
+}
+
+.menu-container > a:hover {
+  background-color: #617dc1;
+}
+
+
+.header {
+  flex: 0.1;
+}
+.profile-dropdown {
+  flex: 0;
+  border: 1px solid #c9d4da;
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 4.5px solid transparent;
+  border-right: 4.5px solid transparent;
+  border-top: 5px solid #838383;
+}
+
+.profile-dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+.dropdown-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.dropdown-content > a {
+  display: block;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 6px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-content > a:hover {
+  background-color: #f1f1f1;
+}
+.box {
+  background-color: white;
+  flex: 3;
+  border-radius: 10px;
+  border: 1px solid #cdcdcd;
+}
+.content-title-url {
+  flex: 1;
+  font-size: 0.5rem; /* 적용한 폰트 특성 상 사이즈가 커서 font-size 조정 */
+  text-align: end; /* 텍스트 우측 정렬 */
+}
+.color-red {
+  color: red;
+}
+
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.profile-image {
+  flex: none;
+}
+
+.profile-image-img {
+  height:150; 
+  width:150;
+}
+
+.profile-image-img1 {
+  height:350; 
+  width:350;
+}
+
+.profile-text {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.profile-username {
+  flex: 0;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.content-title {
+  display: flex;
+  align-items: center;
+}
+
+.content-title-name {
+  flex: 1;
+}
